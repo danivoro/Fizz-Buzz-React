@@ -33,6 +33,9 @@ function App() {
     if (value === 'Buzz') {
       return 'buzz';
     }
+    if (value === 'FizzBuzz'){
+      return 'fizzbuzz'
+    }
     return 'number';
   }
   

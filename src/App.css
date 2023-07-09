@@ -1,5 +1,5 @@
 body {
-  background-color: #ffe6b5;
+  background-color: #5b1212;
   font-size: 30px;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,9 +13,10 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
-.fizz, .buzz, .number {
+.fizz, .buzz, .number, .fizzbuzz {
     display: inline-block;
     margin: 10px 5px;
     border-radius: 4px;
@@ -23,7 +24,7 @@ button {
   }
 
 .fizz {
-  background-color: #031634;
+  background-color: #052457;
   color: aliceblue;
   border-radius: 4px;
   margin-right: 5px;
@@ -33,7 +34,7 @@ button {
 }
 
 .buzz {
-  background-color: #036564;
+  background-color: #034365;
   color: aliceblue;
   border-radius: 4px;
   margin-right: 5px;
@@ -43,7 +44,7 @@ button {
 }
 
 .number {
-  background-color: #05a5aa;
+  background-color: #0696ca;
   color: #031634;
   border-radius: 4px;
   margin-right: 5px;
@@ -51,3 +52,13 @@ button {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+.fizzbuzz {
+    background-color: #031634;
+    color: aliceblue;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
