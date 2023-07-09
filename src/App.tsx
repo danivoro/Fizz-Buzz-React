@@ -26,10 +26,24 @@ function App() {
     return parallelNumbers.map((x) => fizzBuzz(x));
   }
   
+  function classForFizzBuzz(value: string | number) {
+    if (value === 'Fizz') {
+      return 'fizz';
+    }
+    if (value === 'Buzz') {
+      return 'buzz';
+    }
+    return 'number';
+  }
+  
 
   return (
     <>
-      <p>{arrayToFizzBuzz(paralelNumbers).join(' ')}</p>
+      <p>
+      {arrayToFizzBuzz(paralelNumbers).map((item, index) => (
+        <span key={index} className={classForFizzBuzz(item)}>{item} </span>
+      ))}
+      </p>
       <button onClick={generateParalelNumbers}>Next</button>
     </>
   )
