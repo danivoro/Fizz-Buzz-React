@@ -4,14 +4,10 @@ import './App.css'
 function App() {
   const [paralelNumbers, setParalelNumbers] = useState <number[]>([1])
 
- 
   function generateParalelNumbers(){
-    function nextParalelNumber(){
-      return paralelNumbers[paralelNumbers.length - 1] + 1
-    }
-    setParalelNumbers([...paralelNumbers, nextParalelNumber()])
+    const nextParalelNumber = paralelNumbers[paralelNumbers.length - 1] + 1
+    setParalelNumbers([...paralelNumbers, nextParalelNumber])
   }
-
 
   function arrayToFizzBuzz(parallelNumbers: number[]): Array<string | number> {
     function fizzBuzz(num: number): string | number {
